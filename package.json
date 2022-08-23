@@ -1,0 +1,22 @@
+{
+  "name": "mini-compiler",
+  "version": "1.0.0",
+  "description": "A mini compiler by TS",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest --run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raingrain/mini-compiler.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raingrain/mini-compiler/issues"
+  },
+  "homepage": "https://github.com/raingrain/mini-compiler#readme",
+  "devDependencies": {
+    "vitest": "^0.22.1"
+  }
+}
