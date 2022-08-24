@@ -7,7 +7,7 @@ export enum TokenTypes {
 }
 
 // token数组中每一个元素由它的类型和它的字符串值组成
-interface Token {
+export interface Token {
     type: TokenTypes,
     value: string
 }
