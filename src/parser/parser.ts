@@ -1,71 +1,7 @@
 import { Token, TokenTypes } from "../tokenizer/tokenizer";
+import { createCallExpressionNode, createNumberNode, createRootNode, createStringNode, RootNode } from "./nodeType";
 
-// 四种节点类型
-export enum NodeTypes {
-    Root,
-    Number,
-    String,
-    CallExpression
-}
 
-// 三种节点
-type ChileNode = NumberNode | StringNode | CallExpressionNode
-
-// 父类型
-interface Node {
-    type: NodeTypes;
-}
-
-// 根节点
-interface RootNode extends Node {
-    body: ChileNode[];
-}
-
-// 数字节点
-interface NumberNode extends Node {
-    value: string;
-}
-
-// 字符串节点
-interface StringNode extends Node {
-    value: string;
-}
-
-// 表达式节点
-interface CallExpressionNode extends Node {
-    name: string,
-    params: ChileNode[]
-}
-
-// 创建不同节点的函数
-function createRootNode(): RootNode {
-    return {
-        type: NodeTypes.Root,
-        body: []
-    };
-}
-
-function createNumberNode(value: string): NumberNode {
-    return {
-        type: NodeTypes.Number,
-        value
-    };
-}
-
-function createStringNode(value: string): StringNode {
-    return {
-        type: NodeTypes.String,
-        value
-    };
-}
-
-function createCallExpressionNode(name: string): CallExpressionNode {
-    return {
-        type: NodeTypes.CallExpression,
-        name,
-        params: []
-    };
-}
 
 //
 export function parser(tokens: Token[]): RootNode {
