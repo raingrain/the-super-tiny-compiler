@@ -1,5 +1,5 @@
 {
-  "name": "mini-compiler",
+  "name": "the-super-tiny-compiler",
   "version": "1.0.0",
   "description": "A mini compiler by TS",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/raingrain/mini-compiler.git"
+    "url": "git+https://github.com/raingrain/the-super-tiny-compiler.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/raingrain/mini-compiler/issues"
+    "url": "https://github.com/raingrain/the-super-tiny-compiler/issues"
   },
-  "homepage": "https://github.com/raingrain/mini-compiler#readme",
+  "homepage": "https://github.com/raingrain/the-super-tiny-compiler#readme",
   "devDependencies": {
     "vitest": "^0.34.6"
   }
