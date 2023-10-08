@@ -1,4 +1,4 @@
-import { test, expect } from "vitest";
+import { expect, test } from "vitest";
 import { NodeTypes } from "../parser/nodeType";
 import { codeGenerator } from "./codeGenerator";
 
@@ -12,35 +12,35 @@ test("codeGenerator", () => {
                     type: "CallExpression",
                     callee: {
                         type: "Identifier",
-                        name: "add",
+                        name: "add"
                     },
                     arguments: [
                         {
                             type: "Number",
-                            value: "2",
+                            value: "2"
                         },
                         {
                             type: "CallExpression",
                             callee: {
                                 type: "Identifier",
-                                name: "subtract",
+                                name: "subtract"
                             },
                             arguments: [
                                 {
                                     type: "Number",
-                                    value: "4",
+                                    value: "4"
                                 },
                                 {
                                     type: "Number",
-                                    value: "2",
-                                },
-                            ],
-                        },
-                    ],
-                },
-            },
-        ],
+                                    value: "2"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        ]
     };
 
-    expect(codeGenerator(transformedAST)).toEqual("add(2, subtract(4, 2));")
-})
+    expect(codeGenerator(transformedAST)).toEqual("add(2, subtract(4, 2));");
+});
