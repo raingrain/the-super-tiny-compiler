@@ -31,7 +31,6 @@ test("string", () => {
     expect(tokenizer(code)).toEqual(tokens);
 });
 
-
 test("(add 1 2)", () => {
     const code = "(add 1 2)";
     const tokens = [
