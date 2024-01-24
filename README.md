@@ -2,4 +2,4 @@
 
 > *This project uses **TS** to rewrite [the-super-tiny-compiler](https://github.com/jamiebuilds/the-super-tiny-compiler) and **Vitest** as a unit testing tool.*
 
-![image](the-super-tiny-compiler.png)
+![image](./assets/images/the-super-tiny-compiler.png)
